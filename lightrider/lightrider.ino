@@ -32,7 +32,7 @@ void loop()
     digitalWrite(LATCH, LOW);             //Latch Low - start sending
     shiftOut(SER, CLK, MSBFIRST, seq[i]); //Shift Most Sig. Bit First
     digitalWrite(LATCH, HIGH);            //Latch High - stop sending
-    delay(100);                           //Animation Speed
+    delay(50);                           //Animation Speed
   }
 }
 
